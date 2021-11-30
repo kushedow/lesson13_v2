@@ -31,7 +31,7 @@ app.run()
 
 # @app.route('/form')
 # def page_get():
-#     phone = request.form.get("phone")
+#     phone = request.args.get("phone")
 #     return f"Получен телефон {phone}"
 
 # Отправляем форму получаем данные. Окей, но можно лучше.
@@ -42,7 +42,7 @@ app.run()
 
 # @app.route('/')
 # def page_form():
-#     request_data = request.form
+#     request_data = request.args
 #
 #     if request_data:
 #         phone = request_data.get("phone")
